@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulários 1</title>
+</head>
+<body>
+
+  <h1>Informações Cadastrais</h1>
+
+  <form action="/cadastrar" name="cadastro-usuario">
+
+    <fieldset form="logo"> 
+
+      <div class="img">
+        <img src="img/image.jpg" alt="some text" width=60% height=60%>
+      </div>
+
+    </fieldset>
+
+    <fieldset form="nome-completo"> 
+
+
+      <div>
+        <p class="required">Nome completo:</p>
+        <p id="paragrafo">Escreva seu nome completo sem abreviações.</p>
+        <input type="text" name="nome" id="nome" required="" placeholder="Sua resposta" maxlength="100">
+        
+      </div>
+
+    </fieldset>
+
+    <fieldset form="email-usuario"> 
+
+      <div> 
+        <p class="required">Email:</p>
+        <p id="paragrafo">Escreva seu E-mail para contato</p>
+        <input type="email" name="email" required="" id="email" placeholder="Sua resposta" > 
+      </div>
+
+    </fieldset>
+
+    <fieldset form="telefone-usuario"> 
+
+      <div>
+        <p class="required">Numero de Telefone:</p>
+        <p id="paragrafo">Escreva seu Telefone e o DD de sua Cidade</p>
+        <input type="number" name="tel" required="" id="tel" placeholder="Sua resposta" >
+      </div>
+
+    </fieldset>
+
+    <fieldset form="data-usuario"> 
+
+
+      <div>
+        <p class="required">Data de Nascimento:</p>
+        <p id="paragrafo">Qual a data de seu Nascimento?</p>
+        <input type="date" name="data" required="" id="data" placeholder="Sua resposta" >
+      </div>
+
+    </fieldset>
+
+    <fieldset form="maior-usuario"> 
+
+      <div>
+        <p class="required">Maior de Idade? </p>
+        <p id="paragrafo">Maque abaixo a opção correspondente</p>
+        <input type="radio" required="" name="maior_de_idade?" value="Sim"> Sim
+        <input type="radio" required="" name="maior_de_idade?" value="Não"> Não 
+      </div>
+
+
+    </fieldset>
+
+    <fieldset form="Pontos de Interesse">
+      <p class="p1">Pontos de Interesse</p>
+
+      <div id = "opcoes">
+        <label class="locais" for="locais">Locais: </label>
+        <select name="locais" id="locais">
+          <option value="1">Selecione</option>
+          <option value="1">Museu</option>
+          <option value="2">Teatro</option>
+          <option value="3">Musica</option>
+          <option value="4">Cinema</option>
+          <option value="4">Shopping</option>
+          <option value="4">Parque</option>
+        </select>
+      </div>
+
+      <div id = "checkbox">
+        <p class="p">Quais são seus interesses na cidade? </p>
+        <input type="checkbox" name="interesse" id="interesse1"> <label for="interesse1">Turista</label>
+        <input type="checkbox" name="interesse" id="interesse2"> <label for="interesse2">Residente</label>
+        <input type="checkbox" name="interesse" id="interesse3"> <label for="interesse3">Estudante</label>
+      </div>
+    </fieldset>
+
+    <div class="buttons-div">
+      <button type="reset">Limpar</button>
+      <button type="submit">Cadastrar</button>
+    </div>
+
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Red Hat Mono', monospace;
+
+}
+
+body{
+
+  display: grid;
+  background-color: rgb(158, 209, 175);
+  grid-template-columns: 42%;
+  justify-content: center
+    
+    }
+
+
+h1 {
+
+  margin: 20px;
+  color: black;
+  text-align: center;
+}
+
+fieldset {
+
+  margin: 30px;
+  border: 2px rgb(214, 212, 212) solid;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  text-align: justify;
+}
+
+p{
+
+   text-align: justify;
+
+}
+
+#paragrafo{
+    
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 40px;
+    margin-top: 7px;
+
+}
+
+legend {
+
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+div {
+  background-color: white;
+  margin: 25px;
+  text-align: center;
+  text-align: justify;
+}
+
+button {
+  padding: 15px;
+  margin: 10px;
+  background-color: rgba(34, 11, 11, 0.384);
+  color: white;
+  font-size: 20px;
+  border: 0;
+  border-radius: 20px;
+}
+
+.buttons-div {
+
+  text-align: center;
+  background-color: rgb(158, 209, 175);
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+} 
+
+#checkbox{
+
+  margin-top: 40px;
+
+}
+
+.required:after {
+  content:" *";
+  color: red
+}
+
+.locais{
+  
+  font-weight: bold;
+
+}
+
+#opcoes{
+  flex-direction: column;
+
+}
+
+.p{
+
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.required{
+
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.img{
+
+  text-align: center;
+  animation: img 7s infinite;
+  
+}
+
+@keyframes img {
+
+  0%{ opacity: 0%;}
+  25%{ transform: translateY(-20px); opacity: 100%;}
+  100%{opacity: 7%;}
+}
+
+.p1{
+
+  text-align: center;
+  font-weight: bold; 
+  font-size: 23px; 
+  margin-bottom: 55px;
+}
+
+input:hover{
+
+  background-color: rgb(221, 103, 103);
+}
+
+input:valid{
+  background-color: rgb(63, 204, 110);
+}
+
+button:hover{
+
+  background-color: rgb(63, 204, 110)
+
+}
+
+
